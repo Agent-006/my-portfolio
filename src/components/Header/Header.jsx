@@ -1,8 +1,10 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
 import { Logo, Social } from "../index";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
+import { AlignRight, X } from "lucide-react";
+import { set } from "react-hook-form";
 
 const navItems = [
   {
@@ -49,38 +51,79 @@ function Header() {
     });
   });
 
+  const [className, setClassName] = useState("translate-x-[100%]");
+  let sideNav = useRef();
+
+  const openNav = () => {
+    setClassName("");
+  };
+  const closeNav = () => {
+    setClassName("translate-x-[100%]");
+  };
+
   return (
-    <nav className="bg-black/90 w-full h-[90px] flex items-center justify-between overflow-hidden">
+    <>
+      <nav className="bg-black/90 fixed z-50 lg:relative md:relative lg:bg-black/90 md:bg-black/90 w-full lg:w-full md:w-full h-[90px] lg:h-[90px] md:h-[90px] flex lg:flex md:flex items-center lg:items-center md:items-center justify-between lg:justify-between md:justify-between lg:overflow-hidden md:overflow-hidden">
+        <div
+          ref={logo}
+          className="lg:w-1/3 md:w-1/3 h-full flex items-center justify-start px-8"
+        >
+          <Link to="/">
+            <Logo />
+          </Link>
+        </div>
+        <div className="h-full flex items-center justify-center px-5 lg:hidden md:hidden cursor-pointer">
+          <AlignRight onClick={openNav} />
+        </div>
+        <div
+          ref={navItem}
+          className="hidden lg:w-1/3 md:w-1/3 lg:h-full md:h-full lg:flex md:flex lg:items-center md:items-center lg:justify-center md:justify-center lg:gap-6 md:gap-6"
+        >
+          {navItems.map((item) => (
+            <div key={item.name}>
+              <a
+                className="lg: border-2 md:border-2 px-5 py-3 rounded-full"
+                href={`#${item.slug}`}
+              >
+                {item.name}
+              </a>
+            </div>
+          ))}
+        </div>
+        <div
+          ref={social}
+          className="hidden w-1/3 lg:w-1/3 md:w-1/3 h-full lg:h-full md:h-full lg:flex md:flex items-center lg:items-center md:items-center justify-end lg:justify-end md:justify-end gap-3 lg:gap-3 md:gap-3 px-8 lg:px-8 md:px-8"
+        >
+          <Social className="bg-zinc-900 h-10 w-10 flex items-center justify-center rounded-full shadow-inner shadow-zinc-800 hover:shadow-zinc-500 duration-300" />
+        </div>
+      </nav>
       <div
-        ref={logo}
-        className="w-1/3 h-full flex items-center justify-start px-8"
+        className={`fixed z-50 bg-zinc-950 w-full h-screen px-8 py-8 lg:hidden md:hidden flex-col items-center justify-around flex duration-500 ease-linear ${className}`}
       >
-        <Link to="/">
-          <Logo />
-        </Link>
-      </div>
-      <div
-        ref={navItem}
-        className="w-1/3 h-full flex items-center justify-center gap-6"
-      >
-        {navItems.map((item) => (
-          <div key={item.name}>
-            <a
-              className="border-2 px-5 py-3 rounded-full"
-              href={`#${item.slug}`}
-            >
-              {item.name}
-            </a>
+        <div className="flex gap-2 w-full justify-start items-center px-3">
+          <Social className="bg-zinc-900 h-10 w-10 flex items-center justify-center rounded-full shadow-inner shadow-zinc-800 hover:shadow-zinc-500 duration-300" />
+          <div className="flex items-center justify-end w-1/4 cursor-pointer">
+            <X onClick={closeNav} />
           </div>
-        ))}
+        </div>
+        <div ref={sideNav} className="w-full h-[80vh] flex flex-col gap-8 pt-5">
+          {navItems.map((item) => (
+            <div key={item.name} className="w-full">
+              <div className="w-full px-3 h-14 text-5xl font-semibold tracking-wide overflow-hidden">
+                <div className="h-14 w-full px-1 flex flex-col gap-2 hover:-translate-y-[100%] duration-500">
+                  <a onClick={closeNav} href={`#${item.slug}`}>
+                    {item.name}
+                  </a>
+                  <a onClick={closeNav} href={`#${item.slug}`}>
+                    {item.name}
+                  </a>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
-      <div
-        ref={social}
-        className="w-1/3 h-full flex items-center justify-end gap-3 px-8"
-      >
-        <Social className="bg-zinc-900 h-10 w-10 flex items-center justify-center rounded-full shadow-inner shadow-zinc-800 hover:shadow-zinc-500 duration-300" />
-      </div>
-    </nav>
+    </>
   );
 }
 

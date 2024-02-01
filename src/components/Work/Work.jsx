@@ -59,13 +59,19 @@ function Work() {
 
   return (
     <div id="work" className="min-h-[70vh] w-full px-20 pt-24 overflow-hidden">
-      <h3 ref={subHeading} className="text-xl">
+      <h3 ref={subHeading} className="text-sm lg:text-xl md:text-x">
         MY WORK
       </h3>
-      <h1 ref={mainHeading} className="text-7xl font-semibold pt-4">
+      <h1
+        ref={mainHeading}
+        className="text-5xl lg:text-7xl md:text-7xl font-semibold pt-4"
+      >
         Projects.
       </h1>
-      <p ref={desc} className="pt-10 w-2/4 text-lg text-zinc-200">
+      <p
+        ref={desc}
+        className="pt-10 w-full lg:w-2/4 md:w-2/4 text-sm lg:text-lg md:text-lg tracking-wider text-zinc-200"
+      >
         Following projects showcasees my skills and experience through
         real-world examples of my work. Each project is briefly described with
         links to code repositories an dlive demos in it. It reflects my ability
@@ -74,7 +80,7 @@ function Work() {
       </p>
       <div
         ref={workCard}
-        className="mt-16 h-[550px] w-full flex gap-12 items-center justify-center"
+        className="mt-52 min-h-[550px] w-full flex flex-wrap gap-12 items-center justify-center"
       >
         <WorkCards />
       </div>

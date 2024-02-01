@@ -73,9 +73,9 @@ function Hero() {
   });
 
   return (
-    <div className="w-full min-h-[100vh] flex flex-col items-center justify-center py-44 overflow-hidden">
+    <div className="w-full z-40 min-h-[100vh] flex flex-col items-center justify-center py-44 overflow-hidden">
       <div className="my-10">
-        <h1 className="text-8xl font-extrabold flex">
+        <h1 className="text-5xl md:text-8xl lg:text-8xl font-extrabold flex">
           <h1 className="pb-5" ref={heading}>
             Hi, I'm
           </h1>
@@ -88,10 +88,16 @@ function Hero() {
         </h1>
 
         <div>
-          <h3 ref={introLeft} className="text-3xl font-semibold tracking-wide">
+          <h3
+            ref={introLeft}
+            className="text-xl md:text-3xl lg:text-3xl font-semibold tracking-wide"
+          >
             I develop user interfaces
           </h3>
-          <h3 ref={introRight} className="text-3xl font-semibold tracking-wide">
+          <h3
+            ref={introRight}
+            className="text-xl md:text-3xl lg:text-3xl font-semibold tracking-wide"
+          >
             and web applications.
           </h3>
         </div>
@@ -99,7 +105,7 @@ function Hero() {
       <div className="mb-10">
         <button
           ref={btn}
-          className="flex items-center justify-center gap-4 font-medium px-4 py-3 bg-zinc-100 text-zinc-900 rounded-full"
+          className="flex items-center justify-center gap-4 font-medium text-sm lg:text-md md:text-lg px-4 py-2 bg-zinc-100 text-zinc-900 rounded-full"
         >
           scroll down
           <span className="bg-zinc-900 text-zinc-100 p-1 rounded-full">

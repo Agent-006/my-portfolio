@@ -11,6 +11,7 @@ import HashTech from "./HashTech/HashTech";
 import Contact from "./Contact/Contact";
 import Input from "./Input/Input";
 import TextArea from "./TextArea/TextArea";
+import Footer from "./Footer/Footer";
 
 export {
     Logo,
@@ -25,5 +26,6 @@ export {
     HashTech,
     Contact,
     Input,
-    TextArea
+    TextArea,
+    Footer,
 }

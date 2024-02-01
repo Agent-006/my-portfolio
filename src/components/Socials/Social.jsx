@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
+// TODO: Social links
+
 const socialItems = [
   {
     name: "facebook",

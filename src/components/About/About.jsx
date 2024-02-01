@@ -128,21 +128,30 @@ function About() {
       id="about"
       className="opacity-0 w-full min-h-screen px-20 py-8 text-zinc-200 overflow-hidden"
     >
-      <h3 className="intro text-xl">INTRODUCTION</h3>
-      <h1 className="overview text-7xl font-semibold pt-4">Overview.</h1>
-      <p className="desc pt-10 w-2/4 text-lg text-zinc-200">
+      <h3 className="intro text-sm lg:text-xl md:text-xl">INTRODUCTION</h3>
+      <h1 className="overview text-5xl lg:text-7xl md:text-7xl font-semibold pt-4">
+        Overview.
+      </h1>
+      <p className="desc pt-10 w-full lg:w-2/4 md:w-2/4 text-sm lg:text-lg md:text-lg tracking-wider text-zinc-200">
         I'm a skilled software developer with experience in JavaScript, and
         expertise in technologies like React, GSAP and Locomotive. I'm a quick
         learner and collaborate closely with clients to create efficient,
         scalable, and user-friendly solutions that solve real-world problems.
         Let's work together to bring your ideas to life!
       </p>
-      <div ref={card} className="mt-14 flex items-center justify-start gap-12">
+      <div
+        ref={card}
+        className="mt-14 flex flex-wrap items-center justify-start gap-12"
+      >
         <Cards />
       </div>
       {/* TODO: Education */}
-      <h3 className="techSubHeading mt-32 text-xl">TECHNOLOGIES</h3>
-      <h1 className="techHeading text-7xl font-semibold pt-5">Tech Stack.</h1>
+      <h3 className="techSubHeading mt-32 text-sm lg:text-xl md:text-xl">
+        TECHNOLOGIES
+      </h3>
+      <h1 className="techHeading text-5xl lg:text-7xl md:text-7xl font-semibold pt-5">
+        Tech Stack.
+      </h1>
       <div ref={techCard} className="flex flex-wrap gap-12 w-full mt-14">
         <TechBlocks />
       </div>

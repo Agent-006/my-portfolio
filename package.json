@@ -11,13 +11,15 @@
   },
   "dependencies": {
     "@gsap/react": "^2.1.0",
+    "appwrite": "^13.0.1",
     "gsap": "^3.12.5",
     "lucide-react": "^0.316.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-hook-form": "^7.49.3",
     "react-router-dom": "^6.21.3",
-    "react-tilt": "^1.0.2"
+    "react-tilt": "^1.0.2",
+    "react-toastify": "^10.0.4"
   },
   "devDependencies": {
     "@types/react": "^18.2.43",
