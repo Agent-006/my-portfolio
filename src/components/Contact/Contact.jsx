@@ -106,7 +106,10 @@ function Contact() {
       <h3 ref={subHeading} className="text-sm lg:text-xl md:text-xll">
         GET IN TOUCH
       </h3>
-      <h1 ref={mainHeading} className="text-5xl lg:text-7xl md:text-7xl font-semibold pt-4">
+      <h1
+        ref={mainHeading}
+        className="text-5xl lg:text-7xl md:text-7xl font-semibold pt-4"
+      >
         Contact.
       </h1>
       <div className="w-full min-h-[90vh] flex flex-col justify-between">
@@ -128,7 +131,7 @@ function Contact() {
         >
           <div className="bg-zinc-950/90 w-full rounded-3xl">
             <form
-              className="w-full h-full p-10 flex flex-col items-start justify-center gap-10"
+              className="w-full h-full p-10 flex flex-col lg:flex-row md:flex-row items-start justify-center gap-10"
               onSubmit={handleSubmit(submit)}
             >
               <Input
