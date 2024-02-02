@@ -6,9 +6,14 @@ import { Facebook, Github, Instagram, Linkedin, Twitter } from "lucide-react";
 
 const socialItems = [
   {
-    name: "facebook",
-    slug: "/",
-    element: <Facebook />,
+    name: "github",
+    slug: "https://github.com/Agent-006",
+    element: <Github />,
+  },
+  {
+    name: "linkedIn",
+    slug: "https://www.linkedin.com/in/sagar-gope-119123248/",
+    element: <Linkedin />,
   },
   {
     name: "instagram",
@@ -17,18 +22,13 @@ const socialItems = [
   },
   {
     name: "twitter",
-    slug: "/",
+    slug: "https://twitter.com/sagarghosh0610",
     element: <Twitter />,
   },
   {
-    name: "linkedIn",
-    slug: "/",
-    element: <Linkedin />,
-  },
-  {
-    name: "github",
-    slug: "/",
-    element: <Github />,
+    name: "facebook",
+    slug: "https://www.facebook.com/profile.php?id=100010535077097",
+    element: <Facebook />,
   },
 ];
 
