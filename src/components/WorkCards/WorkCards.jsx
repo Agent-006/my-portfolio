@@ -12,7 +12,7 @@ const workItems = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eveniet repellendus quibusdam amet praesentium consequatur!",
     repo: "",
     live: "",
-    image: "../../../public/Screenshot 2024-01-06 012412.png",
+    image: "../../../Screenshot 2024-01-06 012412.png",
     hashTech: ['reactjs', 'gsap'],
   },
   {
@@ -21,7 +21,7 @@ const workItems = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eveniet repellendus quibusdam amet praesentium consequatur!",
     repo: "",
     live: "",
-    image: "../../../public/Screenshot 2024-01-06 015305.png",
+    image: "../../../Screenshot 2024-01-06 015305.png",
     hashTech: ['reactjs', 'gsap'],
   },
   {
@@ -30,7 +30,7 @@ const workItems = [
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eveniet repellendus quibusdam amet praesentium consequatur!",
     repo: "",
     live: "",
-    image: "../../../public/Screenshot 2024-01-06 012412.png",
+    image: "../../../Screenshot 2024-01-06 012412.png",
     hashTech: ['reactjs', 'gsap'],
   },
 ];
@@ -50,10 +50,10 @@ function WorkCards() {
         <div className="relative bg-zinc-950/90 w-full h-full rounded-3xl border-none flex flex-col items-center justify-between p-7">
           <div className="absolute bg-zinc-950 rounded-full h-12 w-24 top-[50%] right-10 flex justify-evenly items-center shadow-inner shadow-zinc-700 hover:shadow-zinc-400 duration-300">
             <Link to={work.live}>
-              <img className="h-full" src="../../../public/github.png" alt="" />
+              <img className="h-full" src="../../../github.png" alt="" />
             </Link>
             <Link to={work.live}>
-              <img className="h-full" src="../../../public/github.png" alt="" />
+              <img className="h-full" src="../../../github.png" alt="" />
             </Link>
           </div>
           <div className="h-40 w-full rounded-3xl overflow-hidden">

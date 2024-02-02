@@ -4,7 +4,6 @@ import { Logo, Social } from "../index";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { AlignRight, X } from "lucide-react";
-import { set } from "react-hook-form";
 
 const navItems = [
   {
@@ -62,8 +61,8 @@ function Header() {
   };
 
   return (
-    <>
-      <nav className="bg-black/90 fixed z-50 lg:relative md:relative lg:bg-black/90 md:bg-black/90 w-full lg:w-full md:w-full h-[90px] lg:h-[90px] md:h-[90px] flex lg:flex md:flex items-center lg:items-center md:items-center justify-between lg:justify-between md:justify-between lg:overflow-hidden md:overflow-hidden">
+    <div>
+      <nav className="backdrop-blur-sm bg-black/5 fixed z-50 lg:bg-black/90 md:bg-black/90 w-full lg:w-full md:w-full h-[90px] lg:h-[90px] md:h-[90px] flex lg:flex md:flex items-center lg:items-center md:items-center justify-between lg:justify-between md:justify-between lg:overflow-hidden md:overflow-hidden">
         <div
           ref={logo}
           className="lg:w-1/3 md:w-1/3 h-full flex items-center justify-start px-8"
@@ -72,33 +71,12 @@ function Header() {
             <Logo />
           </Link>
         </div>
-        <div className="h-full flex items-center justify-center px-5 lg:hidden md:hidden cursor-pointer">
+        <div className="h-full flex items-center justify-center px-5 cursor-pointer">
           <AlignRight onClick={openNav} />
-        </div>
-        <div
-          ref={navItem}
-          className="hidden lg:w-1/3 md:w-1/3 lg:h-full md:h-full lg:flex md:flex lg:items-center md:items-center lg:justify-center md:justify-center lg:gap-6 md:gap-6"
-        >
-          {navItems.map((item) => (
-            <div key={item.name}>
-              <a
-                className="lg: border-2 md:border-2 px-5 py-3 rounded-full"
-                href={`#${item.slug}`}
-              >
-                {item.name}
-              </a>
-            </div>
-          ))}
-        </div>
-        <div
-          ref={social}
-          className="hidden w-1/3 lg:w-1/3 md:w-1/3 h-full lg:h-full md:h-full lg:flex md:flex items-center lg:items-center md:items-center justify-end lg:justify-end md:justify-end gap-3 lg:gap-3 md:gap-3 px-8 lg:px-8 md:px-8"
-        >
-          <Social className="bg-zinc-900 h-10 w-10 flex items-center justify-center rounded-full shadow-inner shadow-zinc-800 hover:shadow-zinc-500 duration-300" />
         </div>
       </nav>
       <div
-        className={`fixed z-50 bg-zinc-950 w-full h-screen px-8 py-8 lg:hidden md:hidden flex-col items-center justify-around flex duration-500 ease-linear ${className}`}
+        className={`backdrop-blur-lg fixed right-0 z-50 bg-zinc-950/700 w-full lg:w-2/5 md:w-2/5 h-screen px-8 py-8 flex-col items-center justify-around flex duration-500 ease-linear ${className}`}
       >
         <div className="flex gap-2 w-full justify-start items-center px-3">
           <Social className="bg-zinc-900 h-10 w-10 flex items-center justify-center rounded-full shadow-inner shadow-zinc-800 hover:shadow-zinc-500 duration-300" />
@@ -123,7 +101,7 @@ function Header() {
           ))}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

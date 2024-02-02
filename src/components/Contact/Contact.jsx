@@ -1,7 +1,6 @@
 import React, { useRef } from "react";
 import { Input, Social, TextArea } from "../index";
 import { useForm } from "react-hook-form";
-import { Link } from "react-router-dom";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
