@@ -1,4 +1,8 @@
 import { About, Contact, Footer, Header, Hero, Work } from "./components";
+import LocomotiveScroll from 'locomotive-scroll';
+
+const locomotiveScroll = new LocomotiveScroll();
+
 
 function App() {
   return (

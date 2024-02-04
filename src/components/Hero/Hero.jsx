@@ -67,7 +67,7 @@ function Hero() {
         trigger: vid.current,
         start: "top 70%",
         end: "bottom 20%",
-        scrub: true,
+        scrub: 2,
       },
     });
   });
@@ -108,7 +108,7 @@ function Hero() {
           className="flex items-center justify-center gap-4 font-medium text-sm lg:text-md md:text-lg px-4 py-2 bg-zinc-100 text-zinc-900 rounded-full"
         >
           scroll down
-          <span className="bg-zinc-900 text-zinc-100 p-1 rounded-full">
+          <span className="bg-zinc-900 text-zinc-100 p-1 h-8 rounded-full">
             <ArrowBigDownDash />
           </span>
         </button>

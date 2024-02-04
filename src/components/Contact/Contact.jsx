@@ -29,7 +29,7 @@ function Contact() {
       opacity: 0,
       scrollTrigger: {
         trigger: subHeading.current,
-        scrub: true,
+        scrub: 2,
         start: "top 80%",
         end: "bottom 40%",
       },
@@ -39,7 +39,7 @@ function Contact() {
       opacity: 0,
       scrollTrigger: {
         trigger: mainHeading.current,
-        scrub: true,
+        scrub: 2,
         start: "top 80%",
         end: "bottom 40%",
       },
@@ -49,7 +49,7 @@ function Contact() {
       opacity: 0,
       scrollTrigger: {
         trigger: contactForm.current,
-        scrub: true,
+        scrub: 2,
         start: "top 80%",
         end: "bottom 80%",
       },
@@ -59,7 +59,7 @@ function Contact() {
       opacity: 0,
       scrollTrigger: {
         trigger: contactVideo.current,
-        scrub: true,
+        scrub: 2,
         start: "top 80%",
         end: "bottom 80%",
       },

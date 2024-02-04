@@ -22,7 +22,7 @@ function About() {
         trigger: container.current,
         start: "top 70%",
         end: "top 50%",
-        scrub: true,
+        scrub: 2,
       },
     });
 
@@ -36,7 +36,7 @@ function About() {
         trigger: ".intro",
         start: "top 70%",
         end: "top 50%",
-        scrub: true,
+        scrub: 2,
       },
     });
 
@@ -50,7 +50,7 @@ function About() {
         trigger: ".overview",
         start: "top 70%",
         end: "top 50%",
-        scrub: true,
+        scrub: 2,
       },
     });
 
@@ -64,7 +64,7 @@ function About() {
         trigger: ".desc",
         start: "top 70%",
         end: "top 50%",
-        scrub: true,
+        scrub: 2,
       },
     });
 
@@ -76,7 +76,7 @@ function About() {
       ease: "power2",
       scrollTrigger: {
         trigger: card.current,
-        scrub: true,
+        scrub: 2,
         start: "top 80%",
         end: "bottom 80%",
       },
@@ -89,7 +89,7 @@ function About() {
       opacity: 0,
       scrollTrigger: {
         trigger: ".techSubHeading",
-        scrub: true,
+        scrub: 2,
         start: "top 70%",
         end: "bottom 60%",
       },
@@ -102,7 +102,7 @@ function About() {
       opacity: 0,
       scrollTrigger: {
         trigger: ".techHeading",
-        scrub: true,
+        scrub: 2,
         start: "top 80%",
         end: "bottom 60%",
       },
@@ -115,7 +115,7 @@ function About() {
       delay: 1,
       scrollTrigger: {
         trigger: techCard.current,
-        scrub: true,
+        scrub: 2,
         start: "top 80%",
         end: "bottom 80%",
       },

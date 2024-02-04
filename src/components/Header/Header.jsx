@@ -71,12 +71,12 @@ function Header() {
             <Logo />
           </Link>
         </div>
-        <div className="h-full flex items-center justify-center px-5 cursor-pointer">
+        <div className="flex items-center justify-center px-5 cursor-pointer">
           <AlignRight onClick={openNav} />
         </div>
       </nav>
       <div
-        className={`backdrop-blur-lg fixed right-0 z-50 bg-zinc-950/700 w-full lg:w-2/5 md:w-2/5 h-screen px-8 py-8 flex-col items-center justify-around flex duration-500 ease-linear ${className}`}
+        className={`backdrop-blur-lg fixed right-0 z-50 bg-zinc-950/70 w-full lg:w-2/6 md:w-2/5 h-screen px-8 py-8 flex-col items-center justify-around flex duration-500 ease-linear ${className}`}
       >
         <div className="flex gap-2 w-full justify-start items-center px-3">
           <Social className="bg-zinc-900 h-10 w-10 flex items-center justify-center rounded-full shadow-inner shadow-zinc-800 hover:shadow-zinc-500 duration-300" />

@@ -56,7 +56,7 @@ function TeckBlocks() {
       className="hover:shadow-[-1px_-1px_20px_2px] hover:shadow-violet-600 rounded-3xl duration-100"
     >
       <div className="bg-gradient-to-bl from-fuchsia-500 via-violet-600 to-cyan-500 rounded-3xl p-[2px] flex items-center justify-center">
-        <div className="bg-zinc-900/90 w-64 h-24 flex items-center justify-center gap-10 rounded-3xl shadow-inner shadow-zinc-800 hover:shadow-zinc-500">
+        <div className="bg-zinc-900/95 w-64 h-24 flex items-center justify-center gap-10 rounded-3xl shadow-inner shadow-zinc-800 hover:shadow-zinc-500">
           <div className="h-full flex items-center justify-start">
             <img
               className="rounded-xl"
