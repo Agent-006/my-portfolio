@@ -1,4 +1,3 @@
-import React from "react";
 import { HashTech } from "../index";
 import { Tilt } from "react-tilt";
 import { Link } from "react-router-dom";
@@ -26,12 +25,12 @@ const workItems = [
     hashTech: ["reactjs"],
   },
   {
-    name: "Duo Studio",
+    name: "My Blogx",
     about:
       "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eveniet repellendus quibusdam amet praesentium consequatur!",
-    repo: "https://github.com/Agent-006/Duo-Studio",
-    live: "https://duo-studio-ten.vercel.app/",
-    image: "../../../Screenshot 2024-01-06 012412.png",
+    repo: "https://github.com/Agent-006/myblog",
+    live: "https://my-blogxx.vercel.app/",
+    image: "../../../my-blogxx.png",
     hashTech: ["reactjs", "gsap"],
   },
 ];
@@ -57,7 +56,7 @@ function WorkCards() {
             >
               <ArrowUpRight />
             </Link>
-            <Link to={work.live} target="_blank">
+            <Link to={work.repo} target="_blank">
               <img className="h-10 w-10" src="../../../github.png" alt="" />
             </Link>
           </div>
