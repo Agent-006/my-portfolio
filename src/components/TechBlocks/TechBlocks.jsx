@@ -1,4 +1,3 @@
-import React from "react";
 import { Tilt } from "react-tilt";
 
 const techItems = [
@@ -25,6 +24,26 @@ const techItems = [
   {
     techName: "Tailwind",
     icon: "../../../tech/tailwind.png",
+    level: "Intermediate",
+  },
+  {
+    techName: "NextJs",
+    icon: "../../../tech/nextjs.png",
+    level: "Intermediate",
+  },
+  {
+    techName: "NodeJs",
+    icon: "../../../tech/nodejs.png",
+    level: "Intermediate",
+  },
+  {
+    techName: "MongoDB",
+    icon: "../../../tech/mongodb.png",
+    level: "Intermediate",
+  },
+  {
+    techName: "ExpressJs",
+    icon: "../../../tech/expressjs.png",
     level: "Intermediate",
   },
   {

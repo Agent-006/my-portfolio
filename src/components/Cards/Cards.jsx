@@ -18,6 +18,11 @@ const cardData = [
     icon: "../../../web.png",
     docs: "https://gsap.com/",
   },
+  {
+    skill: "NextJs",
+    icon: "../../../mobile.png",
+    docs: "https://nextjs.org/",
+  },
 ];
 
 function Cards() {

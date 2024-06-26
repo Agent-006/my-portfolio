@@ -7,31 +7,31 @@ import { ArrowUpRight } from "lucide-react";
 
 const workItems = [
   {
-    name: "Gericht Resturant UI",
+    name: "My Portfolio",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eveniet repellendus quibusdam amet praesentium consequatur!",
-    repo: "https://github.com/Agent-006/Gericht-restaurant-app",
-    live: "https://gericht-restaurant-app-dun.vercel.app/",
-    image: "../../../Screenshot 2024-02-05 002437.png",
-    hashTech: ["reactjs"],
+      "This is my personal portfolio app where all my works and experience are projected in beauty.",
+    repo: "https://github.com/Agent-006/my-portfolio",
+    live: "https://sagarghosh.vercel.app/",
+    image: "../../../portfolio.png",
+    hashTech: ["reactjs", "tailwindcss", "gsap"],
   },
   {
-    name: "Nike UI Design",
+    name: "IncogniNote",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eveniet repellendus quibusdam amet praesentium consequatur!",
-    repo: "https://github.com/Agent-006/Nike_Website_clone",
-    live: "https://nike-website-clone.vercel.app/",
-    image: "../../../Screenshot 2024-01-06 015305.png",
-    hashTech: ["reactjs"],
+      "Anonymously send and receive feedback with IncogniNote, the secure messaging app for honest communication.",
+    repo: "https://github.com/Agent-006/IncogniNote",
+    live: "https://incogninote.vercel.app/dashboard",
+    image: "../../../incogniNote.png",
+    hashTech: ["nextjs", "mongodb", "tailwindcss", "shadcn"],
   },
   {
-    name: "My Blogx",
+    name: "Wizzie",
     about:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eveniet repellendus quibusdam amet praesentium consequatur!",
-    repo: "https://github.com/Agent-006/myblog",
-    live: "https://my-blogxx.vercel.app/",
-    image: "../../../my-blogxx.png",
-    hashTech: ["reactjs", "gsap"],
+      "Wizzie is a dynamic social media platform designed for seamless real-time interactions and community building.",
+    repo: "https://github.com/Agent-006/Wizzie",
+    live: "https://wizzie.vercel.app/",
+    image: "../../../wizzie.png",
+    hashTech: ["nextjs", "shadcn", "clerk", "mongodb"],
   },
 ];
 

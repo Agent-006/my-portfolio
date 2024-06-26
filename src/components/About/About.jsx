@@ -133,11 +133,11 @@ function About() {
         Overview.
       </h1>
       <p className="desc pt-10 w-full lg:w-2/4 md:w-2/4 text-sm lg:text-lg md:text-lg tracking-wider text-zinc-200">
-        I'm a skilled software developer with experience in JavaScript, and
-        expertise in technologies like React, GSAP and Locomotive. I'm a quick
-        learner and collaborate closely with clients to create efficient,
-        scalable, and user-friendly solutions that solve real-world problems.
-        Let's work together to bring your ideas to life!
+        I&apos;m a skilled software developer with experience in JavaScript, and
+        expertise in technologies like React, Next, GSAP and Locomotive.
+        I&apos;m a quick learner and collaborate closely with clients to create
+        efficient, scalable, and user-friendly solutions that solve real-world
+        problems. Let&apos;s work together to bring your ideas to life!
       </p>
       <div
         ref={card}
