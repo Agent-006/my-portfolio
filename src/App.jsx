@@ -1,6 +1,7 @@
 import { About, Contact, Footer, Header, Hero, Work } from "./components";
 import LocomotiveScroll from 'locomotive-scroll';
 
+// eslint-disable-next-line no-unused-vars
 const locomotiveScroll = new LocomotiveScroll();
 
 
