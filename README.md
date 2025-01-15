@@ -1,7 +1,3 @@
-Here's a concise and engaging GitHub description for your portfolio app:
-
----
-
 ### Personal Portfolio App 🌟  
 A beautifully crafted personal portfolio showcasing my projects, skills, and experience.  
 
@@ -15,7 +11,3 @@ A beautifully crafted personal portfolio showcasing my projects, skills, and exp
 🔗 **Live Demo**: [sagarghosh.vercel.app](https://sagarghosh.vercel.app)
 
 **Feel free to explore, star ⭐, and fork this repository!**  
-
----  
-
-You can adjust it to include any additional details or updates!
